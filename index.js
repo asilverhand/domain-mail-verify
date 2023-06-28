@@ -1,7 +1,7 @@
 const binarySearch = require("./binarySearch");
 
-const fs = require("fs");
 const path = require("path");
+const providers = require("./emailProviders.json");
 
 class EmailProviderChecker {
   verifyEmail(email = "") {
@@ -13,15 +13,7 @@ class EmailProviderChecker {
 
     const emailProvider = parsedEmail.split("@")[1];
 
-    let fileContent = [];
-
-    try {
-      fileContent = fs
-        .readFileSync(path.resolve(__dirname) + "/emailProviders.txt", "utf8")
-        .split("\n");
-    } catch (err) {
-      console.error(err);
-    }
+    let fileContent = providers;
 
     const exists = binarySearch(
       fileContent,
