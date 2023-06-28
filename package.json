@@ -1,0 +1,37 @@
+{
+  "name": "domain-mail-verify",
+  "description": "Only library to check if email is public provider or is corporation mail",
+  "author": {
+    "name": "Tulio Olivieri",
+    "url": "https://github.com/Tuliolivieri"
+  },
+  "contributors": [
+    {
+      "name": "Allan Santiago",
+      "url": "https://github.com/imperadorxs"
+    }
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "github:asilverhand/domain-mail-verify",
+  "bugs": {
+    "url": "https://github.com/asilverhand/domain-mail-verify"
+  },
+  "homepage": "https://github.com/asilverhand/domain-mail-verify",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 14.20.1"
+  },
+  "keywords": [
+    "email-validator",
+    "email-domain-validator",
+    "corporated-email-check",
+    "email-provider-checker",
+    "javascript",
+    "tools",
+    "utils"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.3.2"
+  }
+}
